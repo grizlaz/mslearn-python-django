@@ -29,7 +29,7 @@ class FunctionalTests(unittest.TestCase):
 		try:
 			response = self.driver.get(results.webAppUrl)
 			title = self.driver.title
-			self.assertIn("Home Page - Python Django Application", title)
+			self.assertIn("Home Page - Наш блог", title)
 		except AssertionError:
 			try:
 				# Default title assertion. Remove when deployment issue is fixed
